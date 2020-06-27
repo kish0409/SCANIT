@@ -1,0 +1,245 @@
+
+
+.navbar-toggler
+{
+	display: right;
+	position: absolute;
+	right: 5%;
+}
+
+.bgimg{
+	background-image: url('bgimg.jpeg');
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	width: 100%;
+	height: 720px;
+	opacity: 1;
+	background-blend-mode: soft-light;
+}
+.write{
+	padding: 20px;
+	box-sizing: border-box;
+	
+	
+	background-blend-mode: soft-light;
+}
+
+.write h2{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+transform: translate(-180%,-130%);
+	font-size: 70px;
+
+
+
+}
+.write h4
+{
+position: absolute;
+	top: 50%;
+	left: 50%;
+transform:translate(-50%,38%);
+	float: center;
+	height: 150px;
+	background-color: #101010;
+width: 50%;
+font-size: 40px;
+font-weight: bold;
+}
+.write .btn{
+	background-color:black;
+	 position: absolute;
+	top: 50%;
+	left: 50%;
+transform: translate(-50%,600%);
+}
+
+
+.nav-link:hover{
+	color: black;
+	background-color:#b34d4d;
+
+}
+
+
+.events{
+	padding: 100px 0px 100px;
+	height: 1300px;
+}
+.events h1{
+	font-size: 50px;
+	font-weight: bold;
+
+}
+.set{
+	margin: 80px ;
+	
+}
+.set p{
+	padding: 10px;
+
+}
+
+.set h2{
+	margin-top: 20px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.imgsetting{
+	border-radius: 50px;
+	height: 100px;
+	width: 100px;
+
+}
+
+.fa-file-code-o{
+	margin-top: 20px;
+}
+.fa-code{
+	margin-top: 20px;
+}
+.fa-superscript{
+	margin-top: 20px;
+}
+
+.fa-question{
+	margin-top: 20px;
+}
+
+.fa-users{
+	margin-top: 20px;
+}
+.fa-futbol-o{
+	margin-top: 20px;
+}
+.fa-puzzle-piece
+{
+	margin-top: 20px;
+}
+
+
+
+.pic{
+	height: 50px;
+}
+
+
+
+.organizers{
+	height: 1300px;
+	width: 100%;
+	padding:100px 0 50px; 
+}
+
+.organizers h1{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.card{
+	margin-top:  40px;
+}
+
+
+
+.register{
+	height: 700px;
+	padding: 100px 0 60px;
+	width: 100%;
+}
+
+.register h1{
+	font-weight: bold;
+	font-size: 50px;
+
+}
+
+.reg{
+	margin-top: 70px !important;
+}
+.page-footer a{
+float: right;
+border-radius: 5px;
+font-size: 30px;
+color: black;  
+font-weight: bold;
+width: 100px;
+}
+
+.page-footer{
+	
+  background-color: #8ec3eb;
+  padding: 20px;
+  height: 100px;
+ 
+
+}
+.page-footer h6{
+	line-height: 50px;
+}
+
+
+
+@media(min-width: 992px) and (max-width:1330px) 
+{
+.write h2{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+transform: translate(-180%,-130%);
+	font-size: 50px;
+
+
+
+}
+}
+
+
+
+@media(min-width: 778px) and (max-width: 991px)
+{
+.write h2{display: none;
+}
+.events{
+	
+	height: 1500px;
+}
+.register{
+	height: 900px;
+}
+
+}
+@media(min-width: 480px) and (max-width: 767px){
+.events{
+	
+	height: 2450px;
+}
+.organizers
+ 	{
+	height: 3950px;
+	width: 100%;
+	 padding: 10px;
+}
+.write h2{display: none;
+}
+
+.register{
+	height: 900px;
+}
+}
+@media (max-width: 479px){
+.events{
+	
+	height: 2700px;
+}	
+.organizers{
+	height: 3400px;
+	width: 100%;
+
+}
+.register{
+	height: 900px;
+}
+}

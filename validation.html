@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration from</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<br>
+	<h1 class="text-success text-center">Registration form<br></h1>
+	<br>
+	<div class="col-lg-8 m-auto d-block"  >
+		<form action="#" onsubmit="return valid()" class="bg-light" autocomplete="off">
+			
+			<div class="form-grp" >
+
+				<label style="font-size: 20px; font-weight: bold;margin-top:20px; display: block;">Username:</label>
+				<input type="text" style="width: 700px;" name="user" id="user" class="form-c">
+				<span id="use" class="text-danger font-weight-bold"> </span>
+
+
+			</div>
+
+	<div class="form-grp">
+				<label style="font-size: 20px; font-weight: bold; display: block; margin-top: 20px;">Password:</label>
+				<input type="Password" style="width: 700px;" name="user" id="pass" class="form-c">
+<span id="pas" class="text-danger font-weight-bold"> </span>
+
+			</div>
+<div class="form-grp">
+				<label style="font-size: 20px; margin-top:20px; font-weight: bold; display: block;">ConfirmPassword:</label>
+				<input type="Password" style="width: 700px;" name="user" id="conpass" class="form-c">
+
+<span id="conpas" class="text-danger font-weight-bold"> </span>
+			</div> 
+			<div class="form-grp">
+				<label style="margin-top:20px; font-size: 20px; font-weight: bold; display: block;">Mobile number:</label>
+				<input type="text" style="width: 700px;" name="user" id="Mno" class="form-c">
+
+<span id="pho" class="text-danger font-weight-bold"> </span>
+			</div>
+
+	<div class="form-grp">
+				<label style="font-size: 20px; font-weight: bold; display: block; margin-top:20px;">Email:</label>
+				<input type="text" style="width: 700px;" name="user" id="mail" class="form-c">
+
+<span id="mailid" class="text-danger font-weight-bold"> </span>
+			</div>
+
+<input type="submit" Id="submit" value="Submit"name="" style="margin-top:  20px;" class="btn btn-success">
+
+		</form>
+
+
+	</div>
+
+<script type="text/javascript">
+	
+function valid(){
+	var user=document.getElementById('user').value;
+	
+	var pass=document.getElementById('pass').value;
+	var con=document.getElementById('conpass').value;
+	var phone=document.getElementById('Mno').value;
+	var mail=document.getElementById('mail').value;
+	
+
+if (user =="") {
+	
+	document.getElementById('use').innerHTML=`**enter Username`;
+	return false;
+}
+if(user.length <=2 && user.length >=20)
+{
+	document.getElementById('use').innerHTML=`**User name length must be between 3 and 20`;
+	return false;
+}
+if (!isNaN(user)) {
+	document.getElementById('use').innerHTML=`**User name must charecters as well`;
+	return false;
+}
+if (pass =="") {
+
+	document.getElementById('pas').innerHTML=`enter password`;
+	return false;
+}
+
+if(pass.length <=5 && pass.length >=20)
+{
+	document.getElementById('pas').innerHTML=`**User name length must be between 6 and 20`;
+	return false;
+}
+
+
+if (con =="") {
+	
+	document.getElementById('conpas').innerHTML=`enter ConfirmPassword`;
+	return false;
+}
+if (pass != con) {document.getElementById('conpas').innerHTML=`password not matching`;
+	return false;}
+if (phone =="") {
+	
+	document.getElementById('pho').innerHTML=`enter number`;
+	return false;
+}
+
+if (isNaN(phone)) {document.getElementById('pho').innerHTML=`User must write digits only not charecter`;
+	return false;}
+
+if(phone.length!=10){document.getElementById('pho').innerHTML=`User must write 10 digits `;
+	return false;}
+if (mail =="") {
+	
+	document.getElementById('mailid').innerHTML=`enter mail id`;
+	return false;
+}
+if(mail.index('@')==0)
+
+{
+	document.getElementById('mailid').innerHTML=`invalid '@' position`;
+	return false;
+
+
+
+}
+if ((mail.charAt(mail.length-4)!='.')&& (mail.charAt(mail.length-3)!='.')) {document.getElementById('mailid').innerHTML=`invalid '.' position`;
+	return false;}
+
+}
+
+</script>
+
+</div>
+</body>
+</html>
